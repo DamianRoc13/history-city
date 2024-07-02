@@ -1,0 +1,37 @@
+<!-- box.component.html -->
+<nz-card>
+  <ng-container [ngSwitch]="sections[currentIndex]">
+    <div *ngSwitchCase="'intro'" class="intro-container">
+      <h1>Introducción</h1>
+      <p>{{ introMessage }}</p>
+    </div>
+
+    <div *ngSwitchCase="'beginning'" class="beginning-container">
+      <h1>Inicio</h1>
+      <p>{{ initMessage }}</p>
+    </div>
+
+    <div *ngSwitchCase="'development'" class="development-container">
+      <h1>Desarrollo</h1>
+      <p>{{ des1Message }} {{ nameLuisDC }}, el {{ rolLuis }} y {{ nameAnaN }}, la {{ rolAna }},
+        {{ des2Message }} {{ nameCarlosP }}, {{ nameJoseP }}, {{ namePatriciaP }}, los policías, {{ des3Message }} 
+        {{ namePedroF }} y {{ nameFernandoF }}, los bomberos, {{ des4Message }} 
+        {{ nameJuanE }}, el {{ rolJuan }}, {{ des5Message }} {{ nameGloriaDC }}, la {{ rolGloria }} y 
+        {{ nameElenaN }}, la {{ rolElena }} {{ des6Message }} {{ des7Message }}</p>
+    </div>
+
+    <div *ngSwitchCase="'end'" class="end-container">
+      <h1>Fin</h1>
+      <p>{{ end1Message }} {{ end2Message }}</p>
+    </div>
+
+    <div *ngSwitchCase="'image'" class="image-container">
+      <img src="https://imagenes.extra.ec/files/image_full/files/fp/uploads/2023/09/27/651485b90735d.r_d.631-174-0.jpeg" height="300" width="auto">
+    </div>
+  </ng-container>
+
+  <div class="navigation-buttons">
+    <button nz-button nzType="primary" (click)="prev()" [disabled]="currentIndex === 0">Anterior</button>
+    <button nz-button nzType="primary" (click)="next()" [disabled]="currentIndex === sections.length - 1">Siguiente</button>
+  </div>
+</nz-card>

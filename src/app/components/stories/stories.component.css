@@ -1,0 +1,22 @@
+/* box.component.css */
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.intro-container, .beginning-container, .development-container, .end-container, .image-container {
+  padding: 20px;
+}
+
+.nz-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
