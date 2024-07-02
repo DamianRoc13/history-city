@@ -51,5 +51,17 @@ export class citizen {
     }
   }
 
+export class bazookaHero extends citizen  {
+  override end1(): string {
+    return `A medida que Godzilla avanza, causando destrucción, los esfuerzos coordinados de los profesionales ayudan a 
+    minimizar el daño y salvar vidas. Sin embargo, la amenaza de Godzilla sigue siendo inmensa. 
+    ${this.name} se da cuenta de que debe actuar. En una maniobra audaz, Jorgito monta su moto y se dirige hacia Godzilla. 
+    Armado con una bazuca, esquiva los escombros y las llamas mientras se acerca al monstruo. 
+    Con una valentía increíble, apunta y dispara justo en el momento adecuado.
+    
+    "¡CHUPALOOO!", grita ${this.name} mientras el disparo impacta a Godzilla en un punto vulnerable, derribando al monstruo gigante.
+    La ciudad estalla en vítores mientras el monstruo cae, derrotado.`;
+  }
+}
  
   
